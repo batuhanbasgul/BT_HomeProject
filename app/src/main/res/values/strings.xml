@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BT_HomeProject</string>
+    <string name="app_title">BT</string>
+    <string name="app_subtitle">Home Project</string>
+    <string name="app_sign_in">Giriş Yapınız</string>
+    <string name="app_sign_up">Üyelik Oluşturma</string>
+    <string name="accu_weather">AccuWeather</string>
+
+    //Descriptions
+    <string name="login_email_icon">Login Email Icon</string>
+    <string name="login_password_icon">Login Password Icon</string>
+
+    //Errors
+    <string name="no_internet">İnternet bağlantınızı kontrol ediniz</string>
+    <string name="no_internet_fetched_sqlite">İnternet bağlantınız olmadığı için güncellenemedi</string>
+    <string name="empty_email">Mail adresi boş bırakılamaz</string>
+    <string name="empty_password">Şifre boş bırakılamaz</string>
+    <string name="sign_up_weak_password">Şifre Zayıf</string>
+    <string name="sign_up_email_error">E-Posta Geçersiz</string>
+    <string name="sign_up_email_exists">E-Posta Kullanılıyor</string>
+    <string name="sign_up_error">Üyelik Alınamadı</string>
+    <string name="sign_up_password_no_match">Parolalar Eşleşmiyor</string>
+    <string name="sign_in_invalid_mail">E-Posta Geçersiz</string>
+    <string name="sign_in_invalid_password">Parola Geçersiz</string>
+    <string name="sign_in_login_error">Giriş Yapılamadı</string>
+
+    //Texts
+    <string name="sign_in">Giriş Yap</string>
+    <string name="sign_out">Çıkış Yap</string>
+    <string name="email">E-Posta Adresi</string>
+    <string name="password">Parola</string>
+    <string name="password_repeat">Parola Tekrar</string>
+    <string name="no_account">Hesabınız yok mu ?</string>
+    <string name="sign_up">Üye Ol</string>
+    <string name="remember_me">Beni Hatırla</string>
+
+
+
+</resources>
