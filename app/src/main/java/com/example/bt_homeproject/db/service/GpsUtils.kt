@@ -23,6 +23,8 @@ object GpsUtils : LocationListener{
             locationManager = activity.getSystemService(Context.LOCATION_SERVICE) as LocationManager
             location = locationManager.getLastKnownLocation(gpsProvider)!!
             onLocationChanged(location)
+        }else{
+            gps=null
         }
         return gps
     }

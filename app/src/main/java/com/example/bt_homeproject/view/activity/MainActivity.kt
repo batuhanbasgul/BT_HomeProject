@@ -10,6 +10,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -29,7 +30,9 @@ import com.example.bt_homeproject.db.sqlite.PropertiesLogDao
 import com.example.bt_homeproject.view.adapter.ForecastAdapter
 import com.example.bt_homeproject.view_model.ForecastViewModel
 import com.example.bt_homeproject.view_model.GeoPositionViewModel
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.jar.Manifest
 
 class MainActivity : AppCompatActivity() {
     //API
@@ -84,10 +87,16 @@ class MainActivity : AppCompatActivity() {
             geoPositionData = geoPosition
             getForecast()
         })
-        gps?.let {
+        if(gps!=null){
             geoPositionViewModel.setQValue(
                     "${gps.latitude},${gps.longitude}"
             )
+        }else{
+            swipeRefreshLayout.isRefreshing = false
+            progressBarMain.visibility = View.INVISIBLE
+            Snackbar.make(toolbarMain,resources.getString(R.string.no_location_permisson),Snackbar.LENGTH_LONG).setAction(resources.getString(R.string.allow), View.OnClickListener {
+                ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION), 100)
+            }).show()
         }
     }
 

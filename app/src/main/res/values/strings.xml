@@ -11,6 +11,7 @@
     <string name="login_password_icon">Login Password Icon</string>
 
     //Errors
+    <string name="no_location_permisson">Konum Servislerine İzin Verilsin Mi ?</string>
     <string name="no_internet">İnternet bağlantınızı kontrol ediniz</string>
     <string name="no_internet_fetched_sqlite">İnternet bağlantınız olmadığı için güncellenemedi</string>
     <string name="empty_email">Mail adresi boş bırakılamaz</string>
@@ -25,6 +26,7 @@
     <string name="sign_in_login_error">Giriş Yapılamadı</string>
 
     //Texts
+    <string name="allow">İzin Ver</string>
     <string name="sign_in">Giriş Yap</string>
     <string name="sign_out">Çıkış Yap</string>
     <string name="email">E-Posta Adresi</string>
